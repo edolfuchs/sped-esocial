@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtCdBenefAlt/v_S_01_00_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtCdBenefAlt/v_S_01_00_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtCdBenefAlt/v_S_01_01_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtCdBenefAlt/v_S_01_01_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xs:include schemaLocation="tipos.xsd" />
     <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
     <xs:element name="eSocial">
@@ -26,7 +26,7 @@
                             <xs:element name="ideBenef">
                                 <xs:annotation>
                                     <xs:documentation>Identificação do beneficiário.</xs:documentation>
-                                    <xs:documentation>CHAVE_GRUPO: {cpfBenef}</xs:documentation>
+                                    <xs:documentation>CHAVE_GRUPO: {cpfBenef*}</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>
@@ -42,7 +42,7 @@
                             <xs:element name="alteracao">
                                 <xs:annotation>
                                     <xs:documentation>Alteração de dados do beneficiário.</xs:documentation>
-                                    <xs:documentation>CHAVE_GRUPO: {dtAlteracao}</xs:documentation>
+                                    <xs:documentation>CHAVE_GRUPO: {dtAlteracao*}</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>

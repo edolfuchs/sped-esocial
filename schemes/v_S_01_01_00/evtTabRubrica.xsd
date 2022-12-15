@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_00_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_00_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_01_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_01_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xs:include schemaLocation="tipos.xsd" />
     <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
     <xs:element name="eSocial">
@@ -86,7 +86,7 @@
         <xs:annotation>
             <xs:documentation>Identificação da rubrica e validade das informações</xs:documentation>
             <xs:documentation>DESCRICAO_COMPLETA:Identificação da rubrica e período de validade das informações.</xs:documentation>
-            <xs:documentation>CHAVE_GRUPO: {codRubr}, {ideTabRubr}, {iniValid}, {fimValid}</xs:documentation>
+            <xs:documentation>CHAVE_GRUPO: {codRubr*}, {ideTabRubr*}, {iniValid*}, {fimValid*}</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element name="codRubr" type="TS_codigo_esocial">
@@ -387,6 +387,11 @@
                         <xs:enumeration value="91">
                             <xs:annotation>
                                 <xs:documentation>Suspensão de incidência em decorrência de decisão judicial</xs:documentation>
+                            </xs:annotation>
+                        </xs:enumeration>
+                        <xs:enumeration value="92">
+                            <xs:annotation>
+                                <xs:documentation>Suspensão de incidência em decorrência de decisão judicial - 13º salário</xs:documentation>
                             </xs:annotation>
                         </xs:enumeration>
                     </xs:restriction>

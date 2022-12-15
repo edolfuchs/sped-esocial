@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtAdmPrelim/v_S_01_00_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtAdmPrelim/v_S_01_00_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtAdmPrelim/v_S_01_01_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtAdmPrelim/v_S_01_01_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xs:include schemaLocation="tipos.xsd" />
     <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
     <xs:element name="eSocial">
@@ -19,7 +19,6 @@
                         <xs:documentation>REGRA:REGRA_EMPREGADO_DOMESTICO</xs:documentation>
                         <xs:documentation>REGRA:REGRA_ENVIO_PROC_FECHAMENTO</xs:documentation>
                         <xs:documentation>REGRA:REGRA_EVENTOS_EXTEMP</xs:documentation>
-                        <xs:documentation>REGRA:REGRA_EXCLUSAO_ADMISSAO_PRELIMINAR</xs:documentation>
                         <xs:documentation>REGRA:REGRA_EXISTE_INFO_EMPREGADOR</xs:documentation>
                         <xs:documentation>REGRA:REGRA_MESMO_PROCEMI</xs:documentation>
                         <xs:documentation>REGRA:REGRA_RETIFICA_MESMO_VINCULO</xs:documentation>
@@ -34,7 +33,7 @@
                             <xs:element name="infoRegPrelim">
                                 <xs:annotation>
                                     <xs:documentation>Informações do registro preliminar do trabalhador.</xs:documentation>
-                                    <xs:documentation>CHAVE_GRUPO: {cpfTrab}, {matricula}</xs:documentation>
+                                    <xs:documentation>CHAVE_GRUPO: {cpfTrab*}, {matricula*}</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtCdBenefIn/v_S_01_00_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtCdBenefIn/v_S_01_00_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns="http://www.esocial.gov.br/schema/evt/evtCdBenefIn/v_S_01_01_00" targetNamespace="http://www.esocial.gov.br/schema/evt/evtCdBenefIn/v_S_01_01_00" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xs:include schemaLocation="tipos.xsd" />
     <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
     <xs:element name="eSocial">
@@ -26,7 +26,7 @@
                             <xs:element name="ideEmpregador">
                                 <xs:annotation>
                                     <xs:documentation>Informações de identificação do empregador.</xs:documentation>
-                                    <xs:documentation>CHAVE_GRUPO: {tpInsc}, {nrInsc}</xs:documentation>
+                                    <xs:documentation>CHAVE_GRUPO: {tpInsc*}, {nrInsc*}</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>
@@ -48,7 +48,7 @@
                             <xs:element name="beneficiario">
                                 <xs:annotation>
                                     <xs:documentation>Grupo de informações do beneficiário.</xs:documentation>
-                                    <xs:documentation>CHAVE_GRUPO: {cpfBenef}</xs:documentation>
+                                    <xs:documentation>CHAVE_GRUPO: {cpfBenef*}</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>
